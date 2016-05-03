@@ -110,7 +110,7 @@ public class Menu extends GameEntitiesContainer
 
             if (currentMenu != CurrentMenu.StartingScreen)
             {
-                SkylandUtils.drawMenuBox(batch, "Iron Clouds", positionX, 15, width, 450);
+                SkylandUtils.drawMenuBox(batch, "Skyland", positionX, 15, width, 450);
             }
 
             getCurrentMenu().draw(layer, batch);
