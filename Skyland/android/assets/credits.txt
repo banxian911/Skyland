@@ -1,49 +1,32 @@
 
 
-Thanks for playing!
 
 
-Assets under CC0 or CC-BY-SA licenses:
+Design and Implementation of the 
+Android shooting game based on Skyland
 
-MUSIC
 
-"Space Fighter Loop" Kevin MacLeod (incompetech.com)
-"Hitman" Kevin MacLeod (incompetech.com)
-
-SOUNDS
-
-detonation by M-RED
-helicopter loop by qubodup
-bomb by smcameron
-tank engine by ReadeOnly
-gunshot by Cyberkineticfilms
-all sounds come from freesound.org
-
-IMAGES
-
-UI elements and controls by www.kenney.nl
-planes and clouds from "War On Water"
- - game available on Google Play Store
-tank image by mishonis from opengameart.org
-background assets from glitchthegame.com
-keyboard & controller prompts pack by Xelu
-
-Thanks to many great people sharing
-their assets on CC-BY-SA or CC0 license!
-
-FONT
-
-freeware prism font by Fontfabric (www.fontfabric.com)
+Software Engineering Major Shen Yunlong
 
 
 
-
-
-
-GAME AND CODING BY:
-Piotr Stankowski
-
-
-
-QUALITY ASSURANCE:
-Mariusz Wiaderek
+In the mobile Mobile Games hot today, 
+the design and development of a mobile game 
+is not only a test of the ability of developers,
+developers are more likely to bring good economic returns. 
+This system is a system based on Android platform, 
+using libGDX game engine design, development and implementation 
+of a simple operation, capable of shooting the stable operation 
+of casual games. Firstly on the Android and libgdx were briefly, 
+describes the key techniques of libgdx game development framework, 
+and then analyzes the sky game overall framework and core modules. 
+The game using libgdx engine can achieve cross platform operation, 
+in the design by multiple pictures rolling cycle in order to achieve 
+the purpose of incoming aircraft, through the screen to achieve missile 
+launch control car move around to achieve to circumvent the emitting 
+direction of the bomb and missile control by libgdx package the box2d 
+physics engine to achieve realistic missile hit the aircraft explosion 
+effect by using libgdx in preference to store the gameplay and game 
+achievement. Finally according to the design scheme, design and development 
+of a stable, smooth, easy to get started shooting game, and be able to 
+successfully run on the Android simulator and Android mobile devices.

@@ -186,7 +186,7 @@ public class GameCoreEntity extends GameEntitiesContainer
 
     public void showMainMenu()
     {
-        showRandomlyPlacedEnemiesForBackground();
+       // showRandomlyPlacedEnemiesForBackground();//设置背景，显示随机飞机数量
         menu.currentMenu = Menu.CurrentMenu.MainMenu;
         changeGameState(GameState.MainMenu);
     }

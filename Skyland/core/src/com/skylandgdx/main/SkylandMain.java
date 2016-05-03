@@ -28,16 +28,16 @@ public class SkylandMain extends Game
         SkylandAssets.music01spaceFighterLoop.play();
         if (first)
         {
-            GameSettings.loadOptions();
-            GameSettings.loadHighScores();
-            Gdx.input.setCatchBackKey(true);
-            Gdx.input.setCatchMenuKey(true);
+            GameSettings.loadOptions();//初始化音频和游戏难度
+            GameSettings.loadHighScores();//初始化用户分数
+            Gdx.input.setCatchBackKey(true);//屏蔽返回键
+            Gdx.input.setCatchMenuKey(true);//屏蔽菜单键
             gameScreen = new GameScreen();
 
             first = false;
         }
         gameScreen.resume();
-        setScreen(gameScreen);
+        setScreen(gameScreen);//该方法是传入一个Screen类，同时立即切换到该screen，进行游戏演示。
         GameCoreEntity.instance.start();
     }
 
