@@ -73,7 +73,7 @@ public class LevelTutorial extends AbstractLevel
 
                 tapHereIcon.setText(_.tr("tutorial.tapToMove"));
                 tapHereIcon.setInvert(true);
-                tapHereIcon.setX(GameSettings.getCameraWidth() / 4);
+                tapHereIcon.setX(GameSettings.getCameraWidth() / 2);
                 tapHereIcon.setY(GameSettings.groundPositionY);
                 tapHereIcon.setVisible(true);
                 break;
