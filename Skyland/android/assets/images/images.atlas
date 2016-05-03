@@ -1,0 +1,313 @@
+
+images.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+bg
+  rotate: false
+  xy: 2, 822
+  size: 800, 200
+  orig: 800, 200
+  offset: 0, 0
+  index: -1
+blank
+  rotate: false
+  xy: 1019, 1021
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+clouds/cloud1
+  rotate: false
+  xy: 2, 4
+  size: 263, 156
+  orig: 263, 156
+  offset: 0, 0
+  index: -1
+clouds/cloud2
+  rotate: false
+  xy: 461, 474
+  size: 265, 160
+  orig: 265, 160
+  offset: 0, 0
+  index: -1
+clouds/cloud3
+  rotate: false
+  xy: 2, 318
+  size: 359, 159
+  orig: 359, 159
+  offset: 0, 0
+  index: -1
+clouds/cloud4
+  rotate: false
+  xy: 2, 162
+  size: 303, 154
+  orig: 303, 154
+  offset: 0, 0
+  index: -1
+clouds/cloud5
+  rotate: false
+  xy: 804, 874
+  size: 213, 148
+  orig: 213, 148
+  offset: 0, 0
+  index: -1
+clouds/cloud6
+  rotate: false
+  xy: 461, 636
+  size: 278, 184
+  orig: 278, 184
+  offset: 0, 0
+  index: -1
+clouds/cloud7
+  rotate: false
+  xy: 363, 319
+  size: 262, 153
+  orig: 262, 153
+  offset: 0, 0
+  index: -1
+enemies/bomb1
+  rotate: false
+  xy: 728, 616
+  size: 8, 18
+  orig: 8, 18
+  offset: 0, 0
+  index: -1
+enemies/bomber
+  rotate: false
+  xy: 811, 720
+  size: 64, 16
+  orig: 64, 16
+  offset: 0, 0
+  index: -1
+enemies/heli
+  rotate: false
+  xy: 627, 337
+  size: 80, 31
+  orig: 80, 31
+  offset: 0, 0
+  index: -1
+enemies/heli_tail
+  rotate: false
+  xy: 363, 301
+  size: 144, 16
+  orig: 144, 16
+  offset: 0, 0
+  index: -1
+enemies/plane1
+  rotate: false
+  xy: 362, 277
+  size: 64, 22
+  orig: 64, 22
+  offset: 0, 0
+  index: -1
+enemies/plane2
+  rotate: false
+  xy: 428, 278
+  size: 64, 21
+  orig: 64, 21
+  offset: 0, 0
+  index: -1
+enemies/zeppelin
+  rotate: false
+  xy: 804, 840
+  size: 166, 32
+  orig: 166, 32
+  offset: 0, 0
+  index: -1
+hud/=
+  rotate: false
+  xy: 307, 182
+  size: 26, 19
+  orig: 26, 19
+  offset: 0, 0
+  index: -1
+hud/arrow
+  rotate: false
+  xy: 741, 653
+  size: 41, 62
+  orig: 41, 62
+  offset: 0, 0
+  index: -1
+hud/digit
+  rotate: false
+  xy: 709, 349
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: 0
+hud/digit
+  rotate: false
+  xy: 784, 696
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: 1
+hud/digit
+  rotate: false
+  xy: 267, 44
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: 2
+hud/digit
+  rotate: false
+  xy: 784, 675
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: 3
+hud/digit
+  rotate: false
+  xy: 267, 23
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: 4
+hud/digit
+  rotate: false
+  xy: 267, 2
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: 5
+hud/digit
+  rotate: false
+  xy: 784, 654
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: 6
+hud/digit
+  rotate: false
+  xy: 307, 161
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: 7
+hud/digit
+  rotate: false
+  xy: 305, 140
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: 8
+hud/digit
+  rotate: false
+  xy: 509, 298
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: 9
+hud/empty_heart
+  rotate: false
+  xy: 307, 203
+  size: 27, 23
+  orig: 27, 23
+  offset: 0, 0
+  index: -1
+hud/finger
+  rotate: false
+  xy: 741, 717
+  size: 68, 103
+  orig: 68, 103
+  offset: 0, 0
+  index: -1
+hud/heart
+  rotate: false
+  xy: 267, 65
+  size: 27, 23
+  orig: 27, 23
+  offset: 0, 0
+  index: -1
+hud/osc_button_active
+  rotate: false
+  xy: 913, 788
+  size: 53, 50
+  orig: 53, 50
+  offset: 0, 0
+  index: -1
+hud/osc_button_neutral
+  rotate: false
+  xy: 307, 266
+  size: 53, 50
+  orig: 53, 50
+  offset: 0, 0
+  index: -1
+hud/osc_panel_dark
+  rotate: false
+  xy: 811, 738
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+hud/osc_panel_light
+  rotate: false
+  xy: 627, 370
+  size: 102, 102
+  orig: 102, 102
+  offset: 0, 0
+  index: -1
+hud/osc_pause
+  rotate: false
+  xy: 913, 738
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+hud/osc_radio_off
+  rotate: false
+  xy: 267, 124
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+hud/osc_radio_on
+  rotate: false
+  xy: 307, 228
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+hud/x
+  rotate: false
+  xy: 530, 300
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+logo
+  rotate: false
+  xy: 2, 479
+  size: 457, 341
+  orig: 457, 341
+  offset: 0, 0
+  index: -1
+particle
+  rotate: false
+  xy: 267, 90
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+tank/gun
+  rotate: false
+  xy: 627, 328
+  size: 24, 7
+  orig: 24, 7
+  offset: 0, 0
+  index: -1
+tank/shell
+  rotate: false
+  xy: 741, 644
+  size: 18, 7
+  orig: 18, 7
+  offset: 0, 0
+  index: -1
+tank/tank
+  rotate: false
+  xy: 972, 844
+  size: 44, 28
+  orig: 44, 28
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,49 @@
+
+
+Thanks for playing!
+
+
+Assets under CC0 or CC-BY-SA licenses:
+
+MUSIC
+
+"Space Fighter Loop" Kevin MacLeod (incompetech.com)
+"Hitman" Kevin MacLeod (incompetech.com)
+
+SOUNDS
+
+detonation by M-RED
+helicopter loop by qubodup
+bomb by smcameron
+tank engine by ReadeOnly
+gunshot by Cyberkineticfilms
+all sounds come from freesound.org
+
+IMAGES
+
+UI elements and controls by www.kenney.nl
+planes and clouds from "War On Water"
+ - game available on Google Play Store
+tank image by mishonis from opengameart.org
+background assets from glitchthegame.com
+keyboard & controller prompts pack by Xelu
+
+Thanks to many great people sharing
+their assets on CC-BY-SA or CC0 license!
+
+FONT
+
+freeware prism font by Fontfabric (www.fontfabric.com)
+
+
+
+
+
+
+GAME AND CODING BY:
+Piotr Stankowski
+
+
+
+QUALITY ASSURANCE:
+Mariusz Wiaderek

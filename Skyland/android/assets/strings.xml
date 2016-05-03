@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<languages xml:space="preserve">
+<language name="en_US" >
+    <string key="game.start">tap to start</string>
+    <string key="game.level">level %d</string>
+    <string key="game.finalLevel">final level</string>
+    <string key="game.pause">pause</string>
+    <string key="game.loss">game over</string>
+    <string key="game.loss.outOfHealth">You were hit by one bomb too much!</string>
+    <string key="game.loss.zeroMissiles">You're out of ammo!</string>
+    <string key="game.loss.tooFewMissiles">You have too few missiles to finish the level.</string>
+    <string key="game.won">mission complete</string>
+    <string key="game.won.next">next</string>
+    <string key="game.won.total">total</string>
+    <string key="game.won.inputTitle">Type your nick</string>
+    <string key="tutorial.tapToShoot">Tap anywhere on the sky to shoot</string>
+    <string key="tutorial.tapToMove">Tap on the ground to move</string>
+    <string key="tutorial.hudHealth">Here you can see amount of health left - each enemy bomb that hits your tank will take one away.
+Be cautious, as soon as it drops to 0 the mission is lost!
+
+Tap to continue.</string>
+    <string key="tutorial.hudTargets">Here you can see amount of targets left - mission is won when it drops to zero.
+
+Tap to continue.</string>
+    <string key="tutorial.hudMissiles">Here you can see amount of missiles left.
+As soon as it drops below the amount needed to complete the level, the mission is lost.
+
+Tap to continue.</string>
+    <string key="tutorial.enemyIncoming">Enemies always come from the left, and as soon as they reach right side, they turn back.
+Looks like you'll have to shoot one now!
+
+Tap to continue.</string>
+    <string key="tutorial.complete">Great work! Now you're ready to defend yourself.
+If the game gets too hard or too easy, try changing difficulty in settings.
+
+Tap to finish tutorial.</string>
+    <string key="menu.play">play</string>
+    <string key="menu.levels">levels</string>
+    <string key="menu.settings">settings</string>
+    <string key="menu.highScores">high scores</string>
+    <string key="menu.credits">credits</string>
+    <string key="menu.back">back</string>
+    <string key="menu.quit">quit</string>
+    <string key="pause.resume">resume</string>
+    <string key="pause.restart">restart</string>
+    <string key="pause.mainMenu">main menu</string>
+    <string key="pause.quit">quit</string>
+    <string key="options.difficulty.easy">easy</string>
+    <string key="options.difficulty.medium">medium</string>
+    <string key="options.difficulty.hard">hard</string>
+    <string key="options.soundVolume">sound volume</string>
+    <string key="options.musicVolume">music volume</string>
+    <string key="options.difficulty">difficulty</string>
+</language>
+
+<language name="en" >
+    <string key="game.start">点击开始</string>
+    <string key="game.level">关卡  %d</string>
+    <string key="game.finalLevel">最后一关</string>
+    <string key="game.pause">暂停</string>
+    <string key="game.loss">游戏结束</string>
+    <string key="game.loss.outOfHealth">你已经被炸弹炸死了!</string>
+    <string key="game.loss.zeroMissiles">你已经没有导弹了!</string>
+    <string key="game.loss.tooFewMissiles">你的导弹数量不足以通过关卡。</string>
+    <string key="game.won">恭喜你，任务完成！</string>
+    <string key="game.won.next">下一关</string>
+    <string key="game.won.total">分数合计</string>
+    <string key="game.won.inputTitle">输入你的姓名</string>
+    <string key="tutorial.tapToShoot">点击空中任何地方，发射导弹，注意你的导弹数量不要少于敌机数量，否则 
+        You will die! </string>
+    <string key="tutorial.tapToMove">点击地面，移动你的导弹发射车，躲避导弹。</string>
+    <string key="tutorial.hudHealth">在这里你可以看到你的生命值，敌人的炸弹每击中你的发射车，生命值就会-1。时刻注意你的生命值,一旦它下降到0，
+        game over!
+
+点击继续。</string>
+    <string key="tutorial.hudTargets">在这里你可以看到敌机数量,你的任务就是消灭一切敌人。
+
+点击继续。</string>
+    <string key="tutorial.hudMissiles">在这里你可以看到发射车的导弹数量。
+一旦低于完成任务所需的数量水平,
+You will die!
+
+点击继续。</string>
+    <string key="tutorial.enemyIncoming">敌机总是来自左边空域,一旦他们到达右侧,就会回头。
+现在是时候使用你的武器，干掉敌人了!
+
+点击继续。</string>
+    <string key="tutorial.complete">干的漂亮！现在你已经知道了规则，准备战斗吧，指挥官！
+如果你感觉游戏太难或者太容易,可以在设置中改变游戏的难度等级。
+
+点击完成教程。</string>
+    <string key="menu.play">开始游戏</string>
+    <string key="menu.levels">关卡</string>
+    <string key="menu.settings">设置</string>
+    <string key="menu.highScores">分数排行榜</string>
+    <string key="menu.credits">简介</string>
+    <string key="menu.back">返回</string>
+    <string key="menu.quit">退出</string>
+    <string key="pause.resume">返回游戏</string>
+    <string key="pause.restart">重新开始</string>
+    <string key="pause.mainMenu">返回菜单</string>
+    <string key="pause.quit">退出</string>
+    <string key="options.difficulty.easy">简单</string>
+    <string key="options.difficulty.medium">一般</string>
+    <string key="options.difficulty.hard">困难</string>
+    <string key="options.soundVolume">音效</string>
+    <string key="options.musicVolume">音乐</string>
+    <string key="options.difficulty">难度等级</string>
+</language>
+
+<language name="pl" >
+    <string key="game.start">tapnij aby rozpocząć...</string>
+    <string key="game.level">poziom %d</string>
+    <string key="game.finalLevel">ostatni poziom</string>
+    <string key="game.pause">pauza</string>
+    <string key="game.loss">przegrana</string>
+    <string key="game.loss.outOfHealth">Trafiła Cię o jedna bomba za dużo!</string>
+    <string key="game.loss.zeroMissiles">Skonczyła Ci się amunicja!</string>
+    <string key="game.loss.tooFewMissiles">Zostało za mało amunicji do dokończenia poziomu.</string>
+    <string key="game.won">zwycięstwo</string>
+    <string key="game.won.next">kontynuuj</string>
+    <string key="game.won.total">razem</string>
+    <string key="game.won.inputTitle">Wpisz swój nick</string>
+    <string key="tutorial.tapToShoot">Tapnij gdziekolwiek na niebie aby wystrzelić</string>
+    <string key="tutorial.tapToMove">Tapnij na ziemi aby się przemieścić</string>
+    <string key="tutorial.hudHealth">Tutaj widzisz, ile życia Ci pozostało - każde trafienie bombą Twojego czołgu zabierze jedno.
+Bądź ostrożny, kiedy ten wskaźnik spadnie do 0, przegrasz!
+
+Tapnij, aby kontynuować.</string>
+    <string key="tutorial.hudTargets">Tutaj widzisz, ile pozostało celów do zestrzelenia.
+Kiedy ten wskaźnik spadnie do zera, misja zakończy się powodzeniem.
+
+Tapnij, aby kontynuować.</string>
+    <string key="tutorial.hudMissiles">Tutaj widzisz, ile pozostało Ci amunicji.
+Kiedy ten wskaźnik spadnie poniżej liczby potrzebnej do zestrzelenia pozostałych celów, misja zakończy się porażką.
+
+Tapnij, aby kontynuować.</string>
+    <string key="tutorial.enemyIncoming">Przeciwnicy zawsze pojawiają się z lewej strony, a kiedy znikają z prawej - zawracają.
+Wygląda na to, że będziesz musiał teraz jednego zestrzelić!
+
+Tapnij, aby kontynuować.</string>
+    <string key="tutorial.complete">Dobra robota! Teraz jesteś gotowy aby się obronić.
+Jeśli gra stanie się za łatwa lub za trudna, możesz dostosować poziom trudności w ustawieniach.
+
+Tapnij, aby kontynuować.</string>
+    <string key="menu.play">graj</string>
+    <string key="menu.levels">poziomy</string>
+    <string key="menu.settings">ustawienia</string>
+    <string key="menu.highScores">wyniki</string>
+    <string key="menu.credits">twórcy</string>
+    <string key="menu.back">powrót</string>
+    <string key="menu.quit">wyjdź z gry</string>
+    <string key="pause.resume">powrót do gry</string>
+    <string key="pause.restart">restart</string>
+    <string key="pause.mainMenu">menu główne</string>
+    <string key="pause.quit">wyjdź z gry</string>
+    <string key="options.difficulty.easy">łatwy</string>
+    <string key="options.difficulty.medium">normalny</string>
+    <string key="options.difficulty.hard">trudny</string>
+    <string key="options.soundVolume">głośność dźwięku</string>
+    <string key="options.musicVolume">głośność muzyki</string>
+    <string key="options.difficulty">poziom trudności</string>
+</language>
+
+<language name="pl-bak" >
+    <string key="game.start">tapnij aby rozpoczac...</string>
+    <string key="game.level">poziom %d</string>
+    <string key="game.finalLevel">ostatni poziom</string>
+    <string key="game.pause">pauza</string>
+    <string key="game.loss">przegrana</string>
+    <string key="game.loss.outOfHealth">Trafila Cie o jedna bomba za duzo!</string>
+    <string key="game.loss.zeroMissiles">Skonczyla Ci sie amunicja!</string>
+    <string key="game.loss.tooFewMissiles">Zostalo za malo amunicji do dokonczenia poziomu.</string>
+    <string key="game.won">zwyciestwo</string>
+    <string key="game.won.next">kontynuuj</string>
+    <string key="game.won.total">razem</string>
+    <string key="game.won.inputTitle">Wpisz swój nick</string>
+    <string key="tutorial.tapToShoot">tapnij gdziekolwiek na niebie aby wystrzelic</string>
+    <string key="tutorial.tapToMove">tapnij na ziemi aby sie przemiescic</string>
+    <string key="tutorial.hudHealth">Tutaj widzisz, ile zycia Ci pozostalo - kazde trafienie bomba Twojego czolgu zabierze jedno.
+Badz ostrozny, kiedy ten wskaznik spadnie do 0, przegrasz!
+
+Tapnij, aby kontynuowac.</string>
+    <string key="tutorial.hudTargets">Tutaj widzisz, ile pozostalo celow do zestrzelenia.
+Kiedy ten wskaznik spadnie do zera, misja zakonczy sie powodzeniem.
+
+Tapnij, aby kontynuowac.</string>
+    <string key="tutorial.hudMissiles">Tutaj widzisz, ile pozostalo Ci amunicji.
+Kiedy ten wskaznik spadnie ponizej liczby potrzebnej do zestrzelenia pozostalych celow, misja zakonczy sie porazka.
+
+Tapnij, aby kontynuowac.</string>
+    <string key="tutorial.enemyIncoming">Przeciwnicy zawsze pojawiaja sie z lewej strony, a kiedy znikaja z prawej - zawracaja.
+Wyglada na to, ze bedziesz musial teraz jednego zestrzelic!
+
+Tapnij, aby kontynuowac.</string>
+    <string key="tutorial.complete">Dobra robota! Teraz jestes gotowy aby sie obronic.
+Jesli gra stanie sie za latwa lub za trudna, mozesz dostosowac poziom trudnosci w ustawieniach.
+
+Tapnij, aby kontynuowac.</string>
+    <string key="menu.play">graj</string>
+    <string key="menu.levels">poziomy</string>
+    <string key="menu.settings">ustawienia</string>
+    <string key="menu.highScores">wyniki</string>
+    <string key="menu.credits">tworcy</string>
+    <string key="menu.back">powrot</string>
+    <string key="menu.quit">wyjdz z gry</string>
+    <string key="pause.resume">powrot do gry</string>
+    <string key="pause.restart">restart</string>
+    <string key="pause.mainMenu">menu glowne</string>
+    <string key="pause.quit">wyjdz z gry</string>
+    <string key="options.difficulty.easy">latwy</string>
+    <string key="options.difficulty.medium">normalny</string>
+    <string key="options.difficulty.hard">trudny</string>
+    <string key="options.soundVolume">glosnosc dzwieku</string>
+    <string key="options.musicVolume">glosnosc muzyki</string>
+    <string key="options.difficulty">poziom trudnosci</string>
+</language>
+</languages>
