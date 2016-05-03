@@ -110,49 +110,6 @@ public class SkylandAssets
         // textures
         SkylandAssets.textureBackground = atlas.findRegion("bg");
         SkylandAssets.textureLogo = atlas.findRegion("logo");
-
-        /*IronCloudsAssets.textureHudDigits = atlas.findRegions("hud/digit");
-        IronCloudsAssets.textureHudX = atlas.findRegion("hud/x");
-        IronCloudsAssets.textureHudEqualSign = atlas.findRegion("hud/=");
-        IronCloudsAssets.textureHudHeart = atlas.findRegion("hud/heart");
-        IronCloudsAssets.textureHudHeartEmpty = atlas.findRegion("hud/empty_heart");
-        IronCloudsAssets.textureHudPause = atlas.findRegion("hud/osc_pause");
-        IronCloudsAssets.textureHudRadioOff = atlas.findRegion("hud/osc_radio_off");
-        IronCloudsAssets.textureHudRadioOn = atlas.findRegion("hud/osc_radio_on");
-        IronCloudsAssets.textureHudFinger = atlas.findRegion("hud/finger");
-        IronCloudsAssets.textureHudArrow = atlas.findRegion("hud/arrow");
-        IronCloudsAssets.textureHudButtonN = new NinePatch(atlas.findRegion("hud/osc_button_neutral"),
-            6, 6, 7, 10
-        );
-        IronCloudsAssets.textureHudButtonA = new NinePatch(atlas.findRegion("hud/osc_button_active"),
-            6, 6, 7, 10
-        );
-        IronCloudsAssets.textureHudPanelLight = new NinePatch(atlas.findRegion("hud/osc_panel_light"),
-            10, 10, 10, 10
-        );
-        IronCloudsAssets.textureHudPanelDark = new NinePatch(atlas.findRegion("hud/osc_panel_dark"),
-            10, 10, 10, 10
-        );
-
-        IronCloudsAssets.textureGun = atlas.findRegion("tank/gun");
-        IronCloudsAssets.textureShell = atlas.findRegion("tank/shell");
-        IronCloudsAssets.textureTank = atlas.findRegion("tank/tank");
-
-        IronCloudsAssets.texturePlane1 = atlas.findRegion("enemies/plane1");
-        IronCloudsAssets.texturePlane2 = atlas.findRegion("enemies/plane2");
-        IronCloudsAssets.textureHeli = atlas.findRegion("enemies/heli");
-        IronCloudsAssets.textureHeliTail = atlas.findRegion("enemies/heli_tail");
-        IronCloudsAssets.textureZeppelin = atlas.findRegion("enemies/zeppelin");
-        IronCloudsAssets.textureBomber = atlas.findRegion("enemies/bomber");
-        IronCloudsAssets.textureBomb = atlas.findRegion("enemies/bomb1");
-
-        IronCloudsAssets.textureCloud1 = atlas.findRegion("clouds/cloud1");
-        IronCloudsAssets.textureCloud2 = atlas.findRegion("clouds/cloud2");
-        IronCloudsAssets.textureCloud3 = atlas.findRegion("clouds/cloud3");
-        IronCloudsAssets.textureCloud4 = atlas.findRegion("clouds/cloud4");
-        IronCloudsAssets.textureCloud5 = atlas.findRegion("clouds/cloud5");
-        IronCloudsAssets.textureCloud6 = atlas.findRegion("clouds/cloud6");
-        IronCloudsAssets.textureCloud7 = atlas.findRegion("clouds/cloud7");*/
         
         SkylandAssets.textureHudDigits = atlas.findRegions("digit");
         SkylandAssets.textureHudX = atlas.findRegion("x");
