@@ -31,7 +31,7 @@ public class SkylandAssets
     public static Texture textureBlank;
 
     public static TextureRegion textureBackground;
-    public static TextureRegion textureLogo;
+    public static Texture textureLogo;
 
     public static NinePatch textureHudButtonA;
     public static NinePatch textureHudButtonN;
@@ -103,13 +103,15 @@ public class SkylandAssets
         SkylandAssets.textureBlank = new Texture(Gdx.files.internal("images/blank.png"));
         SkylandAssets.textureBlank.setWrap(Texture.TextureWrap.Repeat, Texture.TextureWrap.Repeat);
 
+        SkylandAssets.textureLogo = new Texture(Gdx.files.internal("images/bg_log.png"));
+        SkylandAssets.textureLogo.setWrap(Texture.TextureWrap.Repeat, Texture.TextureWrap.Repeat);
         // texture atlas
      //   TextureAtlas atlas = new TextureAtlas(Gdx.files.internal("images/images.atlas"));
         TextureAtlas atlas = new TextureAtlas(Gdx.files.internal("images/image.txt"));
         
         // textures
         SkylandAssets.textureBackground = atlas.findRegion("bg");
-        SkylandAssets.textureLogo = atlas.findRegion("logo");
+      //  SkylandAssets.textureLogo = atlas.findRegion("logo");
         
         SkylandAssets.textureHudDigits = atlas.findRegions("digit");
         SkylandAssets.textureHudX = atlas.findRegion("x");
@@ -135,8 +137,8 @@ public class SkylandAssets
         );
 
         SkylandAssets.textureGun = atlas.findRegion("gun");
-        SkylandAssets.textureShell = atlas.findRegion("shell");
-        SkylandAssets.textureTank = atlas.findRegion("tank");
+        SkylandAssets.textureShell = atlas.findRegion("rocket");
+        SkylandAssets.textureTank = atlas.findRegion("S300");
 
         SkylandAssets.texturePlane1 = atlas.findRegion("plane1");
         SkylandAssets.texturePlane2 = atlas.findRegion("plane2");

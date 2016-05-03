@@ -10,296 +10,303 @@ repeat: none
   orig: 26, 19
   offset: 0, 1
   index: -1
-arrow
+S300
   rotate: false
   xy: 29, 1
+  size: 198, 110
+  orig: 198, 110
+  offset: 0, 0
+  index: -1
+arrow
+  rotate: false
+  xy: 229, 1
   size: 41, 62
   orig: 41, 62
   offset: 0, 0
   index: -1
 bg
   rotate: false
-  xy: 72, 1
+  xy: 1, 113
   size: 800, 123
   orig: 800, 200
   offset: 0, 0
   index: -1
 bomb1
   rotate: false
-  xy: 874, 1
+  xy: 803, 113
   size: 8, 18
   orig: 8, 18
   offset: 0, 0
   index: -1
 bomber
   rotate: false
-  xy: 884, 1
+  xy: 813, 113
   size: 64, 16
   orig: 64, 16
   offset: 0, 0
   index: -1
 cloud1
   rotate: false
-  xy: 1, 126
+  xy: 1, 238
   size: 260, 155
   orig: 263, 156
   offset: 2, 1
   index: -1
 cloud2
   rotate: false
-  xy: 263, 126
+  xy: 263, 238
   size: 265, 160
   orig: 265, 160
   offset: 0, 0
   index: -1
 cloud3
   rotate: false
-  xy: 530, 126
+  xy: 530, 238
   size: 359, 157
   orig: 359, 159
   offset: 0, 2
   index: -1
 cloud4
   rotate: false
-  xy: 1, 288
+  xy: 1, 400
   size: 303, 154
   orig: 303, 154
   offset: 0, 0
   index: -1
 cloud5
   rotate: false
-  xy: 306, 288
+  xy: 306, 400
   size: 212, 146
   orig: 213, 148
   offset: 0, 0
   index: -1
 cloud6
   rotate: false
-  xy: 520, 288
+  xy: 520, 400
   size: 277, 184
   orig: 278, 184
   offset: 0, 0
   index: -1
 cloud7
   rotate: false
-  xy: 1, 474
+  xy: 1, 586
   size: 262, 152
   orig: 262, 153
   offset: 0, 1
   index: -1
 digit
   rotate: false
-  xy: 265, 474
+  xy: 265, 586
   size: 19, 19
   orig: 19, 19
   offset: 0, 0
   index: 0
 digit
   rotate: false
-  xy: 286, 474
+  xy: 286, 586
   size: 19, 19
   orig: 19, 19
   offset: 0, 0
   index: 1
 digit
   rotate: false
-  xy: 307, 474
+  xy: 307, 586
   size: 19, 19
   orig: 19, 19
   offset: 0, 0
   index: 2
 digit
   rotate: false
-  xy: 328, 474
+  xy: 328, 586
   size: 19, 19
   orig: 19, 19
   offset: 0, 0
   index: 3
 digit
   rotate: false
-  xy: 349, 474
+  xy: 349, 586
   size: 19, 19
   orig: 19, 19
   offset: 0, 0
   index: 4
 digit
   rotate: false
-  xy: 370, 474
+  xy: 370, 586
   size: 19, 19
   orig: 19, 19
   offset: 0, 0
   index: 5
 digit
   rotate: false
-  xy: 391, 474
+  xy: 391, 586
   size: 19, 19
   orig: 19, 19
   offset: 0, 0
   index: 6
 digit
   rotate: false
-  xy: 412, 474
+  xy: 412, 586
   size: 19, 19
   orig: 19, 19
   offset: 0, 0
   index: 7
 digit
   rotate: false
-  xy: 433, 474
+  xy: 433, 586
   size: 19, 19
   orig: 19, 19
   offset: 0, 0
   index: 8
 digit
   rotate: false
-  xy: 454, 474
+  xy: 454, 586
   size: 19, 19
   orig: 19, 19
   offset: 0, 0
   index: 9
 empty_heart
   rotate: false
-  xy: 475, 474
+  xy: 475, 586
   size: 27, 23
   orig: 27, 23
   offset: 0, 0
   index: -1
 finger
   rotate: false
-  xy: 504, 474
+  xy: 504, 586
   size: 64, 98
   orig: 68, 103
   offset: 1, 4
   index: -1
 gun
   rotate: false
-  xy: 570, 474
-  size: 24, 7
+  xy: 570, 586
+  size: 3, 3
   orig: 24, 7
-  offset: 0, 0
+  offset: 0, 4
   index: -1
 heart
   rotate: false
-  xy: 596, 474
+  xy: 575, 586
   size: 27, 23
   orig: 27, 23
   offset: 0, 0
   index: -1
 heli
   rotate: false
-  xy: 625, 474
+  xy: 604, 586
   size: 80, 31
   orig: 80, 31
   offset: 0, 0
   index: -1
 heli_tail
   rotate: false
-  xy: 707, 474
+  xy: 686, 586
   size: 144, 16
   orig: 144, 16
   offset: 0, 0
   index: -1
 logo
   rotate: false
-  xy: 1, 628
+  xy: 1, 740
   size: 575, 161
   orig: 600, 400
   offset: 8, 128
   index: -1
 osc_button_active
   rotate: false
-  xy: 578, 628
+  xy: 578, 740
   size: 53, 46
   orig: 53, 50
   offset: 0, 4
   index: -1
 osc_button_neutral
   rotate: false
-  xy: 633, 628
+  xy: 633, 740
   size: 53, 50
   orig: 53, 50
   offset: 0, 0
   index: -1
 osc_panel_dark
   rotate: false
-  xy: 688, 628
+  xy: 688, 740
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 osc_panel_light
   rotate: false
-  xy: 790, 628
+  xy: 790, 740
   size: 102, 102
   orig: 102, 102
   offset: 0, 0
   index: -1
 osc_pause
   rotate: false
-  xy: 894, 628
+  xy: 894, 740
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 osc_radio_off
   rotate: false
-  xy: 944, 628
+  xy: 944, 740
   size: 36, 36
   orig: 36, 36
   offset: 0, 0
   index: -1
 osc_radio_on
   rotate: false
-  xy: 982, 628
+  xy: 982, 740
   size: 36, 36
   orig: 36, 36
   offset: 0, 0
   index: -1
 particle
   rotate: false
-  xy: 1, 791
+  xy: 1, 903
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 plane1
   rotate: false
-  xy: 35, 791
+  xy: 35, 903
   size: 64, 22
   orig: 64, 22
   offset: 0, 0
   index: -1
 plane2
   rotate: false
-  xy: 101, 791
+  xy: 101, 903
   size: 64, 21
   orig: 64, 21
   offset: 0, 0
   index: -1
+rocket
+  rotate: false
+  xy: 167, 903
+  size: 23, 7
+  orig: 23, 7
+  offset: 0, 0
+  index: -1
 shell
   rotate: false
-  xy: 167, 791
+  xy: 192, 903
   size: 18, 7
   orig: 18, 7
   offset: 0, 0
   index: -1
-tank
-  rotate: false
-  xy: 187, 791
-  size: 44, 28
-  orig: 44, 28
-  offset: 0, 0
-  index: -1
 x
   rotate: false
-  xy: 233, 791
+  xy: 212, 903
   size: 17, 17
   orig: 17, 17
   offset: 0, 0
   index: -1
 zeppelin
   rotate: false
-  xy: 252, 791
+  xy: 231, 903
   size: 166, 32
   orig: 166, 32
   offset: 0, 0

@@ -49,10 +49,10 @@ public class Tank extends GameEntity
         tankRegion = new TextureRegion(SkylandAssets.textureTank);
         gunRegion = new TextureRegion(SkylandAssets.textureGun);
 
-        tankWidth = tankRegion.getRegionWidth();
-        tankHeight = tankRegion.getRegionHeight();
-        gunWidth = gunRegion.getRegionWidth();
-        gunHeight = gunRegion.getRegionHeight();
+        tankWidth = tankRegion.getRegionWidth()/2;
+        tankHeight = tankRegion.getRegionHeight()/2;
+        gunWidth = gunRegion.getRegionWidth()*0;
+        gunHeight = gunRegion.getRegionHeight()*0;
         tankPolygon = new Polygon(new float[]{
                 0, 0,
                 tankWidth, 0,
@@ -136,7 +136,7 @@ public class Tank extends GameEntity
         }
 
         turnedForward = aimPos.x >= gunOriginPos.x;
-        gunOriginPos.x = tankPos.x + tankWidth / 2;
+        gunOriginPos.x = tankPos.x + tankWidth*(turnedForward ? 0 : 1);//设置导弹起始点X坐标
         gunMuzzlePos.x = gunOriginPos.x + gunWidth * (turnedForward ? 1 : -1);
         gunMuzzlePos.y = gunOriginPos.y;
 

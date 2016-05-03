@@ -5,11 +5,6 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.skylandgdx.main.SkylandAssets;
 
-/**
- * User: trakos
- * Date: 14.11.13
- * Time: 07:32
- */
 public class TGradient
 {
     static float[] vertices = new float[20];

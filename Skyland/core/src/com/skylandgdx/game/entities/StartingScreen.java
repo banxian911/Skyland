@@ -3,6 +3,7 @@ package com.skylandgdx.game.entities;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.skylandgdx.game.entities.decorations.Cloud;
 import com.skylandgdx.lib.*;
 import com.skylandgdx.lib.input.IGameInput;
 import com.skylandgdx.main.SkylandAssets;
@@ -60,13 +61,22 @@ public class StartingScreen extends GameEntityMenu
     {
         if (layer == GameLayers.LayerHud)
         {
+        
             batch.setColor(new Color(1, 1, 1, logoTransparency));
-            batch.draw(
+           /* batch.draw(
                     SkylandAssets.textureLogo,
                     (GameSettings.getCameraWidth() - SkylandAssets.textureLogo.getRegionWidth()) / 2,
                     (GameSettings.getCameraHeight() - SkylandAssets.textureLogo.getRegionHeight()) / 2 + 50,
                     SkylandAssets.textureLogo.getRegionWidth(),
                     SkylandAssets.textureLogo.getRegionHeight()
+            );*/
+            float scale = 1f;
+            batch.draw(
+                    SkylandAssets.textureLogo,
+                    0,0,
+                    scale *SkylandAssets.textureLogo.getWidth(),
+                    scale *SkylandAssets.textureLogo.getHeight()
+                    
             );
             SkylandAssets.fontPrimeRegular.setColor(new Color(1, 1, 1, transparency));
             SkylandAssets.fontPrimeRegular.drawWrapped(
