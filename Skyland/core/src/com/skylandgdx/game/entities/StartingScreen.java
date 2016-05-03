@@ -70,12 +70,12 @@ public class StartingScreen extends GameEntityMenu
                     SkylandAssets.textureLogo.getRegionWidth(),
                     SkylandAssets.textureLogo.getRegionHeight()
             );*/
-            float scale = 1f;
+            
             batch.draw(
                     SkylandAssets.textureLogo,
                     0,0,
-                    scale *SkylandAssets.textureLogo.getWidth(),
-                    scale *SkylandAssets.textureLogo.getHeight()
+                    GameSettings.getMapWidth(),
+                    GameSettings.getCameraHeight()
                     
             );
             SkylandAssets.fontPrimeRegular.setColor(new Color(1, 1, 1, transparency));

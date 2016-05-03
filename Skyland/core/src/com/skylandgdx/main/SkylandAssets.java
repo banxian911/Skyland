@@ -86,16 +86,16 @@ public class SkylandAssets
         fontPrimeRegular.setFixedWidthGlyphs("0123456789");
 
         // music
-        SkylandAssets.music01spaceFighterLoop = Gdx.audio.newMusic(Gdx.files.internal("audio/music01_space_fighter_loop.mp3"));
+        SkylandAssets.music01spaceFighterLoop = Gdx.audio.newMusic(Gdx.files.internal("audio/music_BaL.mp3"));
         SkylandAssets.music02Hitman = Gdx.audio.newMusic(Gdx.files.internal("audio/music02_hitman.mp3"));
 
         // sound as music objects
         SkylandAssets.soundTank = Gdx.audio.newMusic(Gdx.files.internal("audio/tank.mp3"));
         // sound
-        SkylandAssets.soundTankShot = Gdx.audio.newSound(Gdx.files.internal("audio/tank_shot.wav"));
+        SkylandAssets.soundTankShot = Gdx.audio.newSound(Gdx.files.internal("audio/rocketsend.wav"));
         SkylandAssets.soundHeli = Gdx.audio.newSound(Gdx.files.internal("audio/heli.wav"));
         SkylandAssets.soundBomb = Gdx.audio.newSound(Gdx.files.internal("audio/bomb.wav"));
-        SkylandAssets.soundSimpleExplosion = Gdx.audio.newSound(Gdx.files.internal("audio/simple_explosion.wav"));
+        SkylandAssets.soundSimpleExplosion = Gdx.audio.newSound(Gdx.files.internal("audio/bomb2.wav"));
 
         // textures (non-atlas)
         SkylandAssets.textureGround = new Texture(Gdx.files.internal("images/ground.png"));
