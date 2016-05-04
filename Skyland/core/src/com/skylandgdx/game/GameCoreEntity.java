@@ -67,7 +67,7 @@ public class GameCoreEntity extends GameEntitiesContainer
     GamePauseType gamePauseType = null;
     Menu menu;
     Background background;
-    MlvAndMissiles tankAndMissiles;
+    MlvAndMissiles MlvAndMissiles;
     TargetsAndBombs targetsAndBombs;
     AbstractLevel currentLevel;
     PauseScreen pauseScreen;
@@ -81,7 +81,7 @@ public class GameCoreEntity extends GameEntitiesContainer
 
         menu = Menu.instance;
         background = new Background();
-        tankAndMissiles = new MlvAndMissiles();
+        MlvAndMissiles = new MlvAndMissiles();
         targetsAndBombs = new TargetsAndBombs();
         pauseScreen = new PauseScreen();
         lossScreen = new LossScreen();
@@ -89,7 +89,7 @@ public class GameCoreEntity extends GameEntitiesContainer
 
         add(background);
         add(GameFboParticle.instance);
-        add(tankAndMissiles);
+        add(MlvAndMissiles);
         add(targetsAndBombs);
         add(GameFboParticle.foregroundInstance);
         add(Hud.instance);
@@ -115,7 +115,7 @@ public class GameCoreEntity extends GameEntitiesContainer
                 return GameTouchType.NotIntercepted;
             }
         });
-        touchHandlers.add(tankAndMissiles);
+        touchHandlers.add(MlvAndMissiles);
     }
 
     public GameState getGameState()
@@ -181,7 +181,7 @@ public class GameCoreEntity extends GameEntitiesContainer
     }
     public boolean isTankMoving()
     {
-        return tankAndMissiles.tank.isTankMoving();
+        return MlvAndMissiles.tank.isTankMoving();
     }
 
     public void showMainMenu()
@@ -198,14 +198,14 @@ public class GameCoreEntity extends GameEntitiesContainer
 
     public void resetGame(int missilesLeft)
     {
-        tankAndMissiles.missiles.clear();
+        MlvAndMissiles.missiles.clear();
         targetsAndBombs.targets.clear();
         targetsAndBombs.bombs.clear();
-        tankAndMissiles.tank.setPositionX(GameSettings.getMapWidth() / 2);
-        tankAndMissiles.tank.setDestinationX(GameSettings.getMapWidth() / 2);
-        tankAndMissiles.tank.setMaxHealth(GameSettings.getGameDifficulty().maxHealth);
-        tankAndMissiles.tank.setHealth(GameSettings.getGameDifficulty().maxHealth);
-        tankAndMissiles.tank.setMissiles(missilesLeft);
+        MlvAndMissiles.tank.setPositionX(GameSettings.getMapWidth() / 2);
+        MlvAndMissiles.tank.setDestinationX(GameSettings.getMapWidth() / 2);
+        MlvAndMissiles.tank.setMaxHealth(GameSettings.getGameDifficulty().maxHealth);
+        MlvAndMissiles.tank.setHealth(GameSettings.getGameDifficulty().maxHealth);
+        MlvAndMissiles.tank.setMissiles(missilesLeft);
     }
 
     @Override
@@ -225,7 +225,7 @@ public class GameCoreEntity extends GameEntitiesContainer
         }
         super.update(delta);
 
-        Hashtable<GameEntity, GameEntity[]> entitiesHitByAnyOf = GameEntitiesContainer.getEntitiesHitByAnyOf(tankAndMissiles.missiles, targetsAndBombs.targets);
+        Hashtable<GameEntity, GameEntity[]> entitiesHitByAnyOf = GameEntitiesContainer.getEntitiesHitByAnyOf(MlvAndMissiles.missiles, targetsAndBombs.targets);
         for (Map.Entry<GameEntity, GameEntity[]> entry : entitiesHitByAnyOf.entrySet())
         {
             entry.getKey().alive = false;
@@ -240,9 +240,9 @@ public class GameCoreEntity extends GameEntitiesContainer
             SkylandAssets.soundSimpleExplosion.play(GameSettings.getSoundVolume() * 0.7f);
         }
 
-        if (targetsAndBombs.isMlvHit(tankAndMissiles.tank))
+        if (targetsAndBombs.isMlvHit(MlvAndMissiles.tank))
         {
-            tankAndMissiles.hitTank();
+            MlvAndMissiles.hitTank();
         }
 
         currentLevel.update(delta);
@@ -281,7 +281,7 @@ public class GameCoreEntity extends GameEntitiesContainer
 
     public float getPlayerCameraX()
     {
-        return tankAndMissiles.getPlayerTankX();
+        return MlvAndMissiles.getPlayerTankX();
     }
 
     public int getTargetsCount()
@@ -291,17 +291,17 @@ public class GameCoreEntity extends GameEntitiesContainer
 
     public int getAirborneMissilesCount()
     {
-        return tankAndMissiles.missiles.entitiesSize();
+        return MlvAndMissiles.missiles.entitiesSize();
     }
 
     public int getTankHealth()
     {
-        return tankAndMissiles.tank.getHealth();
+        return MlvAndMissiles.tank.getHealth();
     }
 
     public int getTankMissilesLeft()
     {
-        return tankAndMissiles.tank.getMissilesCount();
+        return MlvAndMissiles.tank.getMissilesCount();
     }
 
     public int getTargetsSize()
