@@ -8,11 +8,7 @@ import com.skylandgdx.main.SkylandAssets;
 
 import java.util.ArrayList;
 
-/**
- * User: trakos
- * Date: 11.11.13
- * Time: 03:30
- */
+
 public abstract class AbstractTarget extends GameEntity
 {
 

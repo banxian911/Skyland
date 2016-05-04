@@ -181,7 +181,7 @@ public class GameCoreEntity extends GameEntitiesContainer
     }
     public boolean isTankMoving()
     {
-        return MlvAndMissiles.tank.isTankMoving();
+        return MlvAndMissiles.Mlv.isTankMoving();
     }
 
     public void showMainMenu()
@@ -201,11 +201,11 @@ public class GameCoreEntity extends GameEntitiesContainer
         MlvAndMissiles.missiles.clear();
         targetsAndBombs.targets.clear();
         targetsAndBombs.bombs.clear();
-        MlvAndMissiles.tank.setPositionX(GameSettings.getMapWidth() / 2);
-        MlvAndMissiles.tank.setDestinationX(GameSettings.getMapWidth() / 2);
-        MlvAndMissiles.tank.setMaxHealth(GameSettings.getGameDifficulty().maxHealth);
-        MlvAndMissiles.tank.setHealth(GameSettings.getGameDifficulty().maxHealth);
-        MlvAndMissiles.tank.setMissiles(missilesLeft);
+        MlvAndMissiles.Mlv.setPositionX(GameSettings.getMapWidth() / 2);
+        MlvAndMissiles.Mlv.setDestinationX(GameSettings.getMapWidth() / 2);
+        MlvAndMissiles.Mlv.setMaxHealth(GameSettings.getGameDifficulty().maxHealth);
+        MlvAndMissiles.Mlv.setHealth(GameSettings.getGameDifficulty().maxHealth);
+        MlvAndMissiles.Mlv.setMissiles(missilesLeft);
     }
 
     @Override
@@ -240,9 +240,9 @@ public class GameCoreEntity extends GameEntitiesContainer
             SkylandAssets.soundSimpleExplosion.play(GameSettings.getSoundVolume() * 0.7f);
         }
 
-        if (targetsAndBombs.isMlvHit(MlvAndMissiles.tank))
+        if (targetsAndBombs.isMlvHit(MlvAndMissiles.Mlv))
         {
-            MlvAndMissiles.hitTank();
+            MlvAndMissiles.hitMlv();
         }
 
         currentLevel.update(delta);
@@ -296,12 +296,12 @@ public class GameCoreEntity extends GameEntitiesContainer
 
     public int getTankHealth()
     {
-        return MlvAndMissiles.tank.getHealth();
+        return MlvAndMissiles.Mlv.getHealth();
     }
 
     public int getTankMissilesLeft()
     {
-        return MlvAndMissiles.tank.getMissilesCount();
+        return MlvAndMissiles.Mlv.getMissilesCount();
     }
 
     public int getTargetsSize()

@@ -11,25 +11,20 @@ import com.skylandgdx.lib.GameSettings;
 import com.skylandgdx.lib.TVector2;
 import com.skylandgdx.main.SkylandAssets;
 
-/**
- * User: trakos
- * Date: 10.11.13
- * Time: 07:38
- */
 public class MissileLaunchingVehicle extends GameEntity
 {
 
-    final int tankWidth;
-    final int tankHeight;
+    final int MlvWidth;
+    final int MlvHeight;
     final int gunWidth;
     final int gunHeight;
-    final Polygon tankPolygon;
+    final Polygon MlvPolygon;
 
     final float shootingDelay = .7f;
     final float maxSpeedX = 250f;
 
 
-    TVector2 tankPos = new TVector2(0, GameSettings.groundPositionY);
+    TVector2 MlvPos = new TVector2(0, GameSettings.groundPositionY);
     TVector2 destinationPos = new TVector2(0, GameSettings.groundPositionY);
     TVector2 gunOriginPos;
     TVector2 gunMuzzlePos = new TVector2(0, 0);
@@ -38,7 +33,7 @@ public class MissileLaunchingVehicle extends GameEntity
     private float currentShootingDelay = 0;
     private float deltaX;
     private boolean turnedForward = false;
-    private TextureRegion tankRegion;
+    private TextureRegion MlvRegion;
     private TextureRegion gunRegion;
 
     protected int missilesLeft = 50;
@@ -46,20 +41,20 @@ public class MissileLaunchingVehicle extends GameEntity
 
     public MissileLaunchingVehicle()
     {
-        tankRegion = new TextureRegion(SkylandAssets.textureTank);
+        MlvRegion = new TextureRegion(SkylandAssets.textureTank);
         gunRegion = new TextureRegion(SkylandAssets.textureGun);
 
-        tankWidth = tankRegion.getRegionWidth()/2;
-        tankHeight = tankRegion.getRegionHeight()/2;
+        MlvWidth = MlvRegion.getRegionWidth()/2;
+        MlvHeight = MlvRegion.getRegionHeight()/2;
         gunWidth = gunRegion.getRegionWidth()*0;
         gunHeight = gunRegion.getRegionHeight()*0;
-        tankPolygon = new Polygon(new float[]{
+        MlvPolygon = new Polygon(new float[]{
                 0, 0,
-                tankWidth, 0,
-                tankWidth, tankHeight,
-                0, tankHeight
+                MlvWidth, 0,
+                MlvWidth, MlvHeight,
+                0, MlvHeight
         });
-        gunOriginPos = new TVector2(0, GameSettings.groundPositionY + tankHeight - 10);
+        gunOriginPos = new TVector2(0, GameSettings.groundPositionY + MlvHeight - 10);
 
         SkylandAssets.soundTank.setLooping(true);
         SkylandAssets.soundTank.setVolume(0.8f * GameSettings.getSoundVolume());
@@ -85,7 +80,7 @@ public class MissileLaunchingVehicle extends GameEntity
     @Override
     public Polygon getHitBox()
     {
-        return tankPolygon;
+        return MlvPolygon;
     }
 
     boolean isPlayingEngineSound = false;
@@ -119,24 +114,24 @@ public class MissileLaunchingVehicle extends GameEntity
     public void update(float delta)
     {
         deltaX = maxSpeedX * delta;
-        if (Math.abs(this.destinationPos.x - this.tankPos.x) < deltaX)
+        if (Math.abs(this.destinationPos.x - this.MlvPos.x) < deltaX)
         {
-            this.tankPos.x = this.destinationPos.x;
+            this.MlvPos.x = this.destinationPos.x;
             ensureEngineSoundIs(false);
         }
-        else if (this.destinationPos.x < this.tankPos.x)
+        else if (this.destinationPos.x < this.MlvPos.x)
         {
-            this.tankPos.x -= deltaX;
+            this.MlvPos.x -= deltaX;
             ensureEngineSoundIs(true);
         }
         else
         {
-            this.tankPos.x += deltaX;
+            this.MlvPos.x += deltaX;
             ensureEngineSoundIs(true);
         }
 
         turnedForward = aimPos.x >= gunOriginPos.x;
-        gunOriginPos.x = tankPos.x + tankWidth*(turnedForward ? 0 : 1);//设置导弹起始点X坐标
+        gunOriginPos.x = MlvPos.x + MlvWidth*(turnedForward ? 0 : 1);//设置导弹起始点X坐标
         gunMuzzlePos.x = gunOriginPos.x + gunWidth * (turnedForward ? 1 : -1);
         gunMuzzlePos.y = gunOriginPos.y;
 
@@ -146,7 +141,7 @@ public class MissileLaunchingVehicle extends GameEntity
         {
             currentShootingDelay -= delta;
         }
-        tankPolygon.setPosition(tankPos.x, tankPos.y);
+        MlvPolygon.setPosition(MlvPos.x, MlvPos.y);
     }
 
     @Override
@@ -170,13 +165,13 @@ public class MissileLaunchingVehicle extends GameEntity
                     1,
                     (float)getAimAngle() * (turnedForward ? 1 : -1));
             batch.draw(
-                    tankRegion,
-                    turnedForward ? this.tankPos.x : (this.tankPos.x + tankWidth),
+                    MlvRegion,
+                    turnedForward ? this.MlvPos.x : (this.MlvPos.x + MlvWidth),
                     GameSettings.groundPositionY,
                     0,
                     0,
-                    tankWidth,
-                    tankHeight,
+                    MlvWidth,
+                    MlvHeight,
                     turnedForward ? 1 : -1,
                     1,
                     0);
@@ -251,23 +246,23 @@ public class MissileLaunchingVehicle extends GameEntity
     @Override
     public float getWidth()
     {
-        return tankWidth;
+        return MlvWidth;
     }
 
     @Override
     public float getHeight()
     {
-        return tankHeight;
+        return MlvHeight;
     }
 
     public float getTankX()
     {
-        return tankPos.x;
+        return MlvPos.x;
     }
 
     public float getTankY()
     {
-        return tankPos.y;
+        return MlvPos.y;
     }
 
     public float getTankMuzzleX()
@@ -308,11 +303,11 @@ public class MissileLaunchingVehicle extends GameEntity
 
     public void setPositionX(int x)
     {
-        tankPos.x = x;
+        MlvPos.x = x;
     }
 
     public boolean isTankMoving()
     {
-        return Math.abs(this.destinationPos.x - this.tankPos.x) > 1f;
+        return Math.abs(this.destinationPos.x - this.MlvPos.x) > 1f;
     }
 }

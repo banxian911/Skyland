@@ -8,9 +8,7 @@ import com.badlogic.gdx.graphics.g2d.*;
 import com.badlogic.gdx.utils.Array;
 
 /**
- * User: trakos
- * Date: 10.11.13
- * Time: 07:01
+ * 初始化系统资源
  */
 public class SkylandAssets
 {

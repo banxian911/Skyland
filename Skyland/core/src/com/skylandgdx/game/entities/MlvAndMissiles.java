@@ -11,16 +11,16 @@ import com.skylandgdx.main.SkylandAssets;
 
 public class MlvAndMissiles extends GameEntitiesContainer
 {
-    public MissileLaunchingVehicle tank;
+    public MissileLaunchingVehicle Mlv;
     public MlvMissileContainer missiles;
     final int missileWidth;
     final int missileHeight;
 
     public MlvAndMissiles()
     {
-        tank = new MissileLaunchingVehicle();
+        Mlv = new MissileLaunchingVehicle();
         missiles = new MlvMissileContainer();
-        add(tank);
+        add(Mlv);
         add(missiles);
 
         missileWidth = SkylandAssets.textureShell.getRegionWidth();
@@ -37,17 +37,17 @@ public class MlvAndMissiles extends GameEntitiesContainer
         {
             return GameTouchType.NotIntercepted;
         }
-        if (touchPosY < tank.getTankGunOriginY())
+        if (touchPosY < Mlv.getTankGunOriginY())
         {
-            tank.setDestinationX(touchPosX - 20);
+            Mlv.setDestinationX(touchPosX - 20);
         }
         else
         {
-            tank.aimAt(touchPosX, touchPosY);
-            if (tank.isReadyToShoot() && missiles.canSpawnAdditionalMissile())
+            Mlv.aimAt(touchPosX, touchPosY);
+            if (Mlv.isReadyToShoot() && missiles.canSpawnAdditionalMissile())
             {
-                missiles.add(tank.getTankGunOriginX(), tank.getTankGunOriginY(), tank.getAimX(), tank.getAimY());
-                tank.registerShot();
+                missiles.add(Mlv.getTankGunOriginX(), Mlv.getTankGunOriginY(), Mlv.getAimX(), Mlv.getAimY());
+                Mlv.registerShot();
                 SkylandAssets.soundTankShot.play(.4f * GameSettings.getSoundVolume());
             }
         }
@@ -56,11 +56,11 @@ public class MlvAndMissiles extends GameEntitiesContainer
 
     public float getPlayerTankX()
     {
-        return tank.getTankX();
+        return Mlv.getTankX();
     }
 
-    public void hitTank()
+    public void hitMlv()
     {
-        tank.hit();
+        Mlv.hit();
     }
 }

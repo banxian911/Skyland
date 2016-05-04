@@ -6,11 +6,6 @@ import com.badlogic.gdx.math.Polygon;
 import com.skylandgdx.lib.*;
 import com.skylandgdx.main.SkylandAssets;
 
-/**
- * User: trakos
- * Date: 10.11.13
- * Time: 21:31
- */
 public class PlaneBomb extends GameEntity
 {
     static final float verticalInitSpeed = -50f;

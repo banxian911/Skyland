@@ -17,7 +17,11 @@ public class Level extends AbstractLevel
     }
 
     final int levelNumber;
-
+/**
+ * Math.Random()函数能够返回带正号的double值，
+ * 该值大于等于0.0且小于1.0，即取值范围是[0.0,1.0)的左闭右开区间，
+ * 返回值是一个伪随机选择的数，在该范围内（近似）均匀分布。
+ */
     ArrayList<AbstractTarget.EnemyType> enemyComposition = new ArrayList<AbstractTarget.EnemyType>();
     public Level(int levelNumber)
     {
@@ -47,6 +51,7 @@ public class Level extends AbstractLevel
         addEnemyToComposition(EnemyStrength.Weak);
         addEnemyToComposition(EnemyStrength.Normal);
         int compositionIndex = 0;
+        
         for (float time = 0; time < 20 + levelNumber * 5; time += 2 - levelNumber * .08f + Math.random())
         {
             enemySpawns.add(new EnemySpawn(enemyComposition.get(compositionIndex++), time));

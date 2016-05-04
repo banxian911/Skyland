@@ -36,9 +36,9 @@ public class TargetsAndBombs extends GameEntitiesContainer
         }
     }
 
-    public boolean isMlvHit(MissileLaunchingVehicle tank)
+    public boolean isMlvHit(MissileLaunchingVehicle mlv)
     {
-        GameEntity[] bombHits = bombs.getEntitiesHitBy(tank);
+        GameEntity[] bombHits = bombs.getEntitiesHitBy(mlv);
         if (bombHits == null)
         {
             return false;

@@ -4,11 +4,7 @@ import com.badlogic.gdx.math.Intersector;
 import com.badlogic.gdx.math.Polygon;
 import com.badlogic.gdx.utils.Disposable;
 
-/**
- * User: trakos
- * Date: 10.11.13
- * Time: 02:40
- */
+
 public abstract class GameEntity implements Disposable, IGameEntity
 {
     public Polygon getHitBox()
