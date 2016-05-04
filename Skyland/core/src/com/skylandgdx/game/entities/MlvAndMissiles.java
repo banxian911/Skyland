@@ -1,25 +1,25 @@
 package com.skylandgdx.game.entities;
 
 import com.skylandgdx.game.GameCoreEntity;
-import com.skylandgdx.game.entities.tank.Tank;
-import com.skylandgdx.game.entities.tank.TankMissileContainer;
+import com.skylandgdx.game.entities.mlv.MissileLaunchingVehicle;
+import com.skylandgdx.game.entities.mlv.MlvMissileContainer;
 import com.skylandgdx.lib.GameEntitiesContainer;
 import com.skylandgdx.lib.GameSettings;
 import com.skylandgdx.lib.GameTouchType;
 import com.skylandgdx.main.SkylandAssets;
 
 
-public class TankAndMissiles extends GameEntitiesContainer
+public class MlvAndMissiles extends GameEntitiesContainer
 {
-    public Tank tank;
-    public TankMissileContainer missiles;
+    public MissileLaunchingVehicle tank;
+    public MlvMissileContainer missiles;
     final int missileWidth;
     final int missileHeight;
 
-    public TankAndMissiles()
+    public MlvAndMissiles()
     {
-        tank = new Tank();
-        missiles = new TankMissileContainer();
+        tank = new MissileLaunchingVehicle();
+        missiles = new MlvMissileContainer();
         add(tank);
         add(missiles);
 

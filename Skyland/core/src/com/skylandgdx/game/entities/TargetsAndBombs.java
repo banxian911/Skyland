@@ -4,7 +4,7 @@ import com.skylandgdx.game.entities.enemies.BombsContainer;
 import com.skylandgdx.game.entities.enemies.PlaneBomb;
 import com.skylandgdx.game.entities.enemies.TargetsContainer;
 import com.skylandgdx.game.entities.enemies.targets.AbstractTarget;
-import com.skylandgdx.game.entities.tank.Tank;
+import com.skylandgdx.game.entities.mlv.MissileLaunchingVehicle;
 import com.skylandgdx.lib.GameEntitiesContainer;
 import com.skylandgdx.lib.GameEntity;
 
@@ -36,7 +36,7 @@ public class TargetsAndBombs extends GameEntitiesContainer
         }
     }
 
-    public boolean isTankHit(Tank tank)
+    public boolean isMlvHit(MissileLaunchingVehicle tank)
     {
         GameEntity[] bombHits = bombs.getEntitiesHitBy(tank);
         if (bombHits == null)

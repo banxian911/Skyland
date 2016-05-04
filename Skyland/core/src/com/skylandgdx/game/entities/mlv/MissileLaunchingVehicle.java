@@ -1,4 +1,4 @@
-package com.skylandgdx.game.entities.tank;
+package com.skylandgdx.game.entities.mlv;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -16,7 +16,7 @@ import com.skylandgdx.main.SkylandAssets;
  * Date: 10.11.13
  * Time: 07:38
  */
-public class Tank extends GameEntity
+public class MissileLaunchingVehicle extends GameEntity
 {
 
     final int tankWidth;
@@ -44,7 +44,7 @@ public class Tank extends GameEntity
     protected int missilesLeft = 50;
     protected int healthLeft = 5;
 
-    public Tank()
+    public MissileLaunchingVehicle()
     {
         tankRegion = new TextureRegion(SkylandAssets.textureTank);
         gunRegion = new TextureRegion(SkylandAssets.textureGun);

@@ -67,7 +67,7 @@ public class GameCoreEntity extends GameEntitiesContainer
     GamePauseType gamePauseType = null;
     Menu menu;
     Background background;
-    TankAndMissiles tankAndMissiles;
+    MlvAndMissiles tankAndMissiles;
     TargetsAndBombs targetsAndBombs;
     AbstractLevel currentLevel;
     PauseScreen pauseScreen;
@@ -81,7 +81,7 @@ public class GameCoreEntity extends GameEntitiesContainer
 
         menu = Menu.instance;
         background = new Background();
-        tankAndMissiles = new TankAndMissiles();
+        tankAndMissiles = new MlvAndMissiles();
         targetsAndBombs = new TargetsAndBombs();
         pauseScreen = new PauseScreen();
         lossScreen = new LossScreen();
@@ -240,7 +240,7 @@ public class GameCoreEntity extends GameEntitiesContainer
             SkylandAssets.soundSimpleExplosion.play(GameSettings.getSoundVolume() * 0.7f);
         }
 
-        if (targetsAndBombs.isTankHit(tankAndMissiles.tank))
+        if (targetsAndBombs.isMlvHit(tankAndMissiles.tank))
         {
             tankAndMissiles.hitTank();
         }

@@ -1,4 +1,4 @@
-package com.skylandgdx.game.entities.tank;
+package com.skylandgdx.game.entities.mlv;
 
 import com.badlogic.gdx.graphics.g2d.ParticleEffectPool;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -11,7 +11,7 @@ import com.skylandgdx.main.SkylandAssets;
  * Date: 10.11.13
  * Time: 21:31
  */
-public class TankMissile extends GameEntity
+public class MlvMissile extends GameEntity
 {
     static final float speed = 400f;
     static final int leftRightImageMargin = 7;
@@ -44,7 +44,7 @@ public class TankMissile extends GameEntity
         return position.y;
     }
 
-    public TankMissile(float initX, float initY, float destX, float destY)
+    public MlvMissile(float initX, float initY, float destX, float destY)
     {
         turnedForward = destX > initX;
         position = new TVector2(initX, initY);

@@ -74,7 +74,7 @@ public class StartingScreen extends GameEntityMenu
             batch.draw(
                     SkylandAssets.textureLogo,
                     0,0,
-                    GameSettings.getMapWidth(),
+                    GameSettings.getCameraWidth(),
                     GameSettings.getCameraHeight()
                     
             );
