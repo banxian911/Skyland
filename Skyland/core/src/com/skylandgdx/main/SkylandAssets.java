@@ -108,7 +108,7 @@ public class SkylandAssets
         TextureAtlas atlas = new TextureAtlas(Gdx.files.internal("images/image.txt"));
         
         // textures
-        SkylandAssets.textureBackground = atlas.findRegion("bg");
+        SkylandAssets.textureBackground = atlas.findRegion("city_background");
       //  SkylandAssets.textureLogo = atlas.findRegion("logo");
         
         SkylandAssets.textureHudDigits = atlas.findRegions("digit");
