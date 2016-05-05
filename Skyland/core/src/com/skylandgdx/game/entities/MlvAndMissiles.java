@@ -46,6 +46,7 @@ public class MlvAndMissiles extends GameEntitiesContainer
             Mlv.aimAt(touchPosX, touchPosY);
             if (Mlv.isReadyToShoot() && missiles.canSpawnAdditionalMissile())
             {
+            	//发射导弹，设置导弹的起始坐标和目标坐标
                 missiles.add(Mlv.getTankGunOriginX(), Mlv.getTankGunOriginY(), Mlv.getAimX(), Mlv.getAimY());
                 Mlv.registerShot();
                 SkylandAssets.soundTankShot.play(.4f * GameSettings.getSoundVolume());

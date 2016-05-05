@@ -6,11 +6,6 @@ import com.badlogic.gdx.math.Polygon;
 import com.skylandgdx.lib.*;
 import com.skylandgdx.main.SkylandAssets;
 
-/**
- * User: trakos
- * Date: 10.11.13
- * Time: 21:31
- */
 public class MlvMissile extends GameEntity
 {
     static final float speed = 400f;
@@ -50,17 +45,17 @@ public class MlvMissile extends GameEntity
         position = new TVector2(initX, initY);
         destination = new TVector2(destX, destY);
         missileBottomTip = new TVector2(leftRightImageMargin, topBottomImageMargin);
-
+        //设置发射角度
         double cathetus = destination.distance(destination.x, position.y);
         double hypotenuse = destination.distance(position);
         double angleRadians = hypotenuse == 0 ? Math.PI / 2 : Math.asin(cathetus / hypotenuse);
         angle = 180 * (angleRadians / Math.PI);
-
+        //设置导弹速度
         velocityComponents = new TVector2((float) (speed * Math.cos(angleRadians) * (turnedForward ? 1 : -1)), (float) (speed * Math.sin(angleRadians)));
         missilePolygon.setVertices(missilePolygonVertices);
         missilePolygon.rotate((float) angle);
 
-        exhaustEffect = SkylandAssets.particleEffectExhaust.obtain();
+        exhaustEffect = SkylandAssets.particleEffectExhaust.obtain();//设置导弹尾焰
     }
 
     @Override

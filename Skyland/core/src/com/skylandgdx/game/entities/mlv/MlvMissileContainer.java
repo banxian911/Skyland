@@ -2,11 +2,6 @@ package com.skylandgdx.game.entities.mlv;
 
 import com.skylandgdx.lib.GameEntitiesContainer;
 
-/**
- * User: trakos
- * Date: 10.11.13
- * Time: 22:12
- */
 public class MlvMissileContainer extends GameEntitiesContainer
 {
     static final int maxMissileCount = 4;
