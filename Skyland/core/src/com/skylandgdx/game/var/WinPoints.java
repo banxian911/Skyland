@@ -22,7 +22,8 @@ public class WinPoints
 
     public int getTotalPoints()
     {
-        return getPointsForHearts() + getPointsForMissiles() + getTotalDifficultyBonus();
+      //  return getPointsForHearts() + getPointsForMissiles() + getTotalDifficultyBonus();
+    	return getPointsForHearts() + getPointsForMissiles();
     }
 
     public int getTotalDifficultyBonus()

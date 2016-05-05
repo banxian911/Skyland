@@ -130,12 +130,12 @@ public class WinScreen extends GameEntityMenu
                 positionX = drawEquals(batch, positionX, positionY);
                 positionX = SkylandUtils.typeNumber(batch, winPoints.getPointsForMissiles(), 4, positionX, positionY, Color.WHITE);
 
-                positionX = positionXStart;
-                positionY -= 40;
-                typeWrapped(batch, winPoints.gameDifficulty.getName(), positionX, positionY, positionXAlignedEquals - positionX, BitmapFont.HAlignment.RIGHT, false);
-                positionX = positionXAlignedEquals;
-                positionX = drawEquals(batch, positionX, positionY);
-                positionX = SkylandUtils.typeNumber(batch, winPoints.getTotalDifficultyBonus(), 4, positionX, positionY, Color.WHITE);
+//                positionX = positionXStart;
+//                positionY -= 40;
+//                typeWrapped(batch, winPoints.gameDifficulty.getName(), positionX, positionY, positionXAlignedEquals - positionX, BitmapFont.HAlignment.RIGHT, false);
+//                positionX = positionXAlignedEquals;
+//                positionX = drawEquals(batch, positionX, positionY);
+//                positionX = SkylandUtils.typeNumber(batch, winPoints.getTotalDifficultyBonus(), 4, positionX, positionY, Color.WHITE);
 
                 positionX = positionXStart;
                 positionY -= 120;
